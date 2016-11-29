@@ -1,0 +1,18 @@
+ {% block dane %}
+ 
+{% for dane in id %}
+
+{% for zmienna in dane.galerie %}
+
+{{dane.id}} 
+
+ 
+{{zmienna.ImgFields}}
+
+ 
+
+{% endfor %}
+{% endfor %}
+
+
+{% endblock %}   

@@ -1,0 +1,59 @@
+{% extends "::layout.html.twig" %} 
+{% block body %}
+  
+  
+<div class="frames">
+<table>
+
+{% for a in wynik %}
+		   {% for b in a.galerie %}
+		 
+ 	 
+	
+
+<tr>		
+	<td class="f"> <tr><td>{{b.opis}}</td></tr>  </td> <td><img src="{{asset('bundles/framework/blog/mini/')}}{{b.imgUrls}}" width=300 height=260></td>  
+</tr>
+
+
+		  
+<tr>		  
+    
+   
+	
+</tr>
+
+<tr>
+  <td>{{b.komentarz}}</td>
+  
+	
+</tr>
+
+{% for c in a.galerie %}
+ 
+{% endfor %}
+
+
+<tr>		
+     <td class="f"><a href="{{b.users}}">cała galeria</a> (w budowie)  </td> 
+</tr>
+ 
+  		  
+		  
+{% endfor %}
+{% endfor %}
+
+ 
+</table>
+</div>
+
+{% endblock %}   
+		    
+ 
+
+
+
+
+
+
+  
